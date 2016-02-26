@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="superna9999" fetch="https://github.com/superna9999" />
+
+  <project  name="ti-xdctools" 
+  		path="xdctools" 
+		remote="superna9999" 
+		revision="xdctools_3_23_03_53" />
+  <project  name="ti-ipc"
+  		path="ipc"
+		remote="superna9999"
+		revision="ipc_1_24_03_32" />
+  <project  name="ti-sysbios"
+  		path="sysbios"
+		remote="superna9999"
+		revision="bios_6_33_05_46" />
+  <project  name="ti-syslink"
+  		path="syslink"
+		remote="superna9999"
+		revision="syslink_2_20_02_20" />
+  <project  name="linux-dm81xx"
+  		path="linux"
+		remote="superna9999"
+		revision="dm81xx-v4.4" />
+</manifest>
