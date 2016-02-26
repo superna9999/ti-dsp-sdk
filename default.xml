@@ -22,4 +22,8 @@
   		path="linux"
 		remote="superna9999"
 		revision="dm81xx-v4.4" />
+  <project  name="codesourcery-toolchain"
+  		path="toolchain"
+		remote="superna9999"
+		revision="arm-linux-2014.05-29" />
 </manifest>
