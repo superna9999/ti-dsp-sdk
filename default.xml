@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="superna9999" fetch="https://github.com/superna9999" />
+  <remote name="buildroot" fetch="git://git.busybox.net" />
 
+  <project  name="ti-dsp-sdk_scripts"
+  		path="."
+		remote="superna9999"
+		revision="master" />
   <project  name="ti-xdctools" 
   		path="xdctools" 
 		remote="superna9999" 
@@ -18,12 +23,16 @@
   		path="syslink"
 		remote="superna9999"
 		revision="syslink_2_20_02_20" />
+  <project  name="ti-cgt6x"
+  		path="codegen"
+		remote="superna9999"
+		revision="cgt6x_7_3_4" />
   <project  name="linux-dm81xx"
   		path="linux"
 		remote="superna9999"
 		revision="dm81xx-v4.4" />
-  <project  name="codesourcery-toolchain"
-  		path="toolchain"
-		remote="superna9999"
-		revision="arm-linux-2014.05-29" />
+  <project  name="buildroot"
+  		path="buildroot"
+		remote="buildroot"
+		revision="2015.11.x" />
 </manifest>
