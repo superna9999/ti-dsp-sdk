@@ -2,8 +2,10 @@
 
 ## Instructions ##
 
-Create directory :
+If you do not have the repo utility, please follow :
+https://source.android.com/source/downloading.html#installing-repo
 
+Then get files :
 ```
 $ mkdir dsp
 $ cd dsp
