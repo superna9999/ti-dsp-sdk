@@ -25,6 +25,115 @@ It will generate:
 
 You are free to use whatever rootfs and pick files from install directory.
 
+The kernel tarballs will be in :
+```
+linux/deploy/
+├── $kernelver-dtbs.tar.gz
+├── $kernelver-firmware.tar.gz
+├── $kernelver-modules.tar.gz
+├── $kernelver.zImage
+├── config-$kernelver
+```
+
+The syslink kernel module will be in :
+```
+install/lib/modules/$kernelver/kernel/drivers/dsp/syslink.ko
+```
+
+The syslink samples will be in :
+```
+install/root/examples/
+├── ex01_helloworld
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+├── ex02_messageq
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+├── ex03_notify
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+├── ex04_sharedregion
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+├── ex05_heapbufmp
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+├── ex06_listmp
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+├── ex07_gatemp
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+├── ex08_ringio
+│   ├── debug
+│   │   ├── app_host
+│   │   ├── run.sh
+│   │   ├── server_dsp.xe674
+│   │   └── slaveloader
+│   └── release
+│       ├── app_host
+│       ├── run.sh
+│       ├── server_dsp.xe674
+│       └── slaveloader
+└── runall.sh
+```
+
 ## Technical facts ##
 
 The build uses RobertCNelson's build systems to generate set of linux tarballs, then uses a patched version of syslink package and uses buildroot to generate a minimal rootfs from the linaro toolchain.
