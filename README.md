@@ -25,3 +25,7 @@ It will generate:
 
 You are free to use whatever rootfs and pick files from install directory.
 
+## Technical facts ##
+
+The build uses RobertCNelson's build systems to generate set of linux tarballs, then uses a patched version of syslink package and uses buildroot to generate a minimal rootfs from the linaro toolchain.
+
